@@ -1,0 +1,52 @@
+/* remember, selectors do not have to be classes or IDs,
+they can be simply the names of the elements, or even refer
+to elements only in specific cases, such as a <h1><ul><li> */
+
+* { /*overrides browser defaults, all elements have
+    no margin or padding unless specifically defined */
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 35px; /*top-bottom first, then left-right */
+    background-color: #39a6b2;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    display: inline; /* allows links to occupy
+    same line and not be pushed below the <h1> */
+}
+
+header h1 a {
+    color: yellow;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+nav ul li {
+    display:inline;
+
+}
+
+nav ul li a {
+    color: #f6e545;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
