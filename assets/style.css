@@ -36,12 +36,10 @@ header nav {
     float: right;
     margin: 7px 0;
     background-color: #39a6b2;
-
 }
 
 nav ul li {
     display:inline;
-
 }
 
 nav ul li a {
@@ -75,4 +73,67 @@ footer {
 
   footer a {
     color: #024e76;
+  }
+
+  section {
+    padding: 60px;
+  }
+
+  section.hero {
+    background-image: url("/assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    position: relative;
+  }
+
+  .hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 450px;
+  color: #024e76;
+  border: solid 3px #024e76;
+  box-shadow: -5px 5px 10px;
+  position: absolute; /*breaks flow, positions relative to parent element, in this case the section div
+  which also must be positioned RELATIVE */
+  bottom: 120px;
+  right: 140px;
+  }
+
+  .hero-form h3 {font-size:26px;
+  margin: 0;}
+
+  .hero-form p {
+    margin: 5px 0 15px 0;
+  }
+
+  .hero-form label {
+    margin: 0 6px;
+  }
+
+  .form-input {
+border: 1px solid black;
+display: block;
+padding: 7px 15px;
+font-size: 16px;
+color:#024e76;
+width: 100%;
+margin-bottom: 14px;
+  }
+
+#sub_div {
+  position: relative;
+  height: 40px;
+  margin: auto;
+}
+
+  .hero-form button {
+    background-color: #024e76;
+    color: #fce138;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    position: absolute;
+    left: 40%;
   }

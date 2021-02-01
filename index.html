@@ -18,19 +18,19 @@
         </nav>
         </header>
         <!--START HERO SECTION-->
-        <section>
-            <div>
+        <section class="hero">
+            <div class="hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will contact you</p>
                 
                 <form>
-                <p>Basic Information:
+                <p>
                     <label for="name">Enter full name:</label>
-                    <input type="text" placeholder="Your name" name="name" id="name"></input>
+                    <input class="form-input" type="text" placeholder="Your name" name="name" id="name"></input>
                     <label for="email">e-mail</label>
-                    <input type="email" name="email" placeholder="bob@johnson.com" id="email" />
+                    <input class="form-input" type="email" name="email" placeholder="bob@johnson.com" id="email" />
                     <label for="phone">phone</label>
-                    <input name="phone" id="phone" placeholder="111-11-1111" type="text" />
+                    <input class="form-input" name="phone" id="phone" placeholder="111-11-1111" type="tel" />
                 </p>
                 <p>Have you ever worked out with a trainer?
                     <input type="radio" name="trainer-confirm" id="trainer-yes" />
@@ -42,15 +42,56 @@
                     <label for="ageverif">Are you at least 18 years old?</label>
                     <input type="checkbox" name="Age Verify" id="ageverif" />
                 </p>
+                <div id="sub_div">
                 <button type="submit">Submit!</button>
-                </form>
+                </div>
+            </form>
             </div>
         </section>
         <!--END HERO SECTION-->
-        <section id ="what-we-do"><h2>What We Do</h2></section>
-        <section><h2>What You Do</h2></section>
-        <section><h2>Your Trainers</h2></section>
-        <section><h2>Reach Out</h2></section>
+
+        <!--START MAIN CONTENT SECTION-->
+        
+        <section id ="what-we-do"> <!--WHAT WE DO-->
+            <h2>What We Do</h2>
+            <p>butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+            </p>
+        </section>
+
+        <section id="what-you-do"> <!--WHAT YOU DO-->
+        <h2>What You Do</h2>
+            <div>
+            <img src="assets/images/step-1.svg" alt="" />
+            <h3>Step 1: Fill Out the Form Above.</h3>
+            <p>You're already here, so why not?</p>
+            </div>
+
+            <div>
+            <img src="./assets/images/step-2.svg" alt="" />
+            <h3>Step 2: Consult with One of Our Trainers.</h3>
+            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            </div>
+
+            <div>
+            <img src="./assets/images/step-3.svg" alt="" />
+            <h3>Step 3: Get Running.</h3>
+            <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            </div>
+            
+            <div>
+            <img src="./assets/images/step-4.svg" alt="" />
+            <h3>Step 4: See Results.</h3>
+            <p>Bi-weekly checkins with your trainer will keep you focused</p>
+            </div>
+        
+        </section> 
+
+        <section><h2>Your Trainers</h2></section> <!--TRAINERS-->
+
+        <section><h2>Reach Out</h2></section> <!--REACH OUT-->
+        
+        <!--END MAIN CONTENT SECTION-->
+
            
         <footer>
             <h2>❤️ Made with love by Run Buddy.</h2>
