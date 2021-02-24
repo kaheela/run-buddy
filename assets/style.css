@@ -242,6 +242,7 @@ margin-bottom: 14px;
 .contact-info {
   width: 800px;
   margin: 0 auto 0 auto;
+  overflow: auto;
 }
 
 .contact-info iframe {
