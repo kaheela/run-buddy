@@ -88,7 +88,7 @@ nav ul li a:hover {
 /*HERO FORM*/
 
   section.hero {
-    background-image: url("/assets/images/hero-bg.jpg");
+    background-image: url("/assets/images/herobg.jpg");
     background-size: cover;
     background-position: center;
     height: 600px;
