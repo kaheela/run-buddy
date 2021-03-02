@@ -244,7 +244,7 @@ margin-bottom: 14px;
 }
 
 .contact-info {
-  width: 800px;
+  width: 100%;
   margin: 0 auto 0 auto;
   overflow: auto;
 }
@@ -252,11 +252,16 @@ margin-bottom: 14px;
 .contact-info iframe {
   width: 400px;
   height: 400px;
+  float: left;
   
 }
 
+.contact-form {
+  float: left;
+}
+
 .contact-details {
-float: right;
+float: left;
  text-align: left;
  color: white;
  line-height: 1.5;
