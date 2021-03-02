@@ -96,6 +96,10 @@ nav ul li a:hover {
     position: relative;
   }
 
+.hero-cta {
+  display:inline-block;
+}
+
   .hero-form {
   background-color: #fce138;
   padding: 20px;
