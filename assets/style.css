@@ -1,68 +1,144 @@
-/* remember, selectors do not have to be classes or IDs,
-they can be simply the names of the elements, or even refer
-to elements only in specific cases, such as a <h1><ul><li> */
-
-* { /*overrides browser defaults, all elements have
-    no margin or padding unless specifically defined */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*browser ignore padding in overall width*/
-  }
-
-body {
-    background-color: rgb(238, 238, 238);
-    font-family: Arial, Helvetica, sans-serif;
-    color:#024e76;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* HEADER / NAV BAR STYLES START */
+
 header {
-    padding: 20px 35px; /*top-bottom first, then left-right */
-    background-color: #39a6b2;
+  padding: 20px 35px;
+  background-color: #39a6b2;
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    margin: 0;
-    display: inline; /* allows links to occupy
-    same line and not be pushed below the <h1> */
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+  font-size: 36px;
+  color: #fce138;
 }
 
-header h1 a {
-    color: yellow;
-    text-decoration: none;
+header a {
+  text-decoration: none;
+  color: #fce138;
 }
 
 header nav {
-    float: right;
-    margin: 7px 0;
-    background-color: #39a6b2;
+  float: right;
+  margin: 7px 0;
 }
 
-nav ul li {
-    display:inline;
+header nav ul li {
+  display: inline;
 }
 
-nav ul li a {
-    color: #f6e545;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 24px;
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
 }
 
-nav ul li a:hover {
-    color: white;
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
+footer {
+  background: #fce138;
+  padding: 40px 35px;
+  width: 100%;
 }
 
-/*UTILITY CLASSES*/
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
 
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+}
+/* END FOOTER STYLES */
+
+/* STYLE ALL SECTION TAGS */
+section {
+  padding: 60px;
+}
+
+/* HERO STYLES START */
+.hero {
+  background-image: url(../assets/images/herobg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+.hero-form {
+  border: 3px solid #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.form-input {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px; 
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #fce138;
+  background-color: #024e76;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+} 
+/* HERO STYLES END */
+
+
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
   display: inline-block;
+  padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
 }
 
 .primary-border {
@@ -72,85 +148,10 @@ nav ul li a:hover {
 .secondary-border {
   border-color: #39a6b2;
 }
+/* SECTION TITLE STYLES END */
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-  section {
-    padding: 60px;
-  }
-
-/*HERO FORM*/
-
-  section.hero {
-    background-image: url("/assets/images/herobg.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    color: white;
-    position: relative;
-  }
-
-.hero-cta {
-  display:inline-block;
-}
-
-  .hero-form {
-  background-color: #fce138;
-  padding: 20px;
-  width: 460px;
-  color: #024e76;
-  border: solid 3px #024e76;
-  box-shadow: -5px 5px 10px;
-  position: absolute; /*breaks flow, positions relative to parent element, in this case the section div
-  which also must be positioned RELATIVE */
-  bottom: 120px;
-  right: 140px;
-  }
-
-  .hero-form h3 {font-size:26px;
-  margin: 0;}
-
-  .hero-form p {
-    margin: 5px 0 15px 0;
-  }
-
-  .hero-form label {
-    margin: 0 6px;
-  }
-
-  .form-input {
-border: 1px solid black;
-display: block;
-padding: 7px 15px;
-font-size: 16px;
-color:#024e76;
-width: 100%;
-margin-bottom: 14px;
-  }
-
-#sub_div {
-  position: relative;
-  height: 40px;
-  margin: auto;
-}
-
-  .hero-form button {
-    background-color: #024e76;
-    color: #fce138;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    position: absolute;
-    left: 40%;
-  }
-
-.intro { /*WHAT YOU DO*/
+/* WHAT WE DO STYLES */
+.intro {
   text-align: center;
 }
 
@@ -158,23 +159,26 @@ margin-bottom: 14px;
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
 }
+/* WHAT YOU DO STYLES END */
 
+
+/* WHAT YOU DO STYLES START */
 .steps { 
   text-align: center;
   background: #fce138;
 }
 
 .steps div {
-  margin-bottom: 60px;  
+  margin-bottom: 80px;
 }
 
 .steps img {
   width: 15%;
   margin: 10px 0;
-}
+} 
 
 .steps h3 {
   color: #024e76;
@@ -182,7 +186,7 @@ margin-bottom: 14px;
   margin-top: 10px;
 }
 
-.steps span { /*slight difference in size between step title and text*/
+.steps span {
   font-size: 38px;
 }
 
@@ -190,19 +194,19 @@ margin-bottom: 14px;
   color: #39a6b2;
   font-size: 23px;
 }
+/* WHAT YOU DO STYLES END */
 
-/*TRAINER SECTION STYLES*/
-
-.trainers { /*section style*/
+/* MEET THE TRAINERS START */
+.trainers {
   text-align: center;
 }
 
-.trainer {          /*article style*/
+.trainer {
   width: 900px;
   margin: 0 auto 30px auto;
   background: #024e76;
   color: #fce138;
-  overflow: auto; 
+  overflow: auto;
 }
 
 .trainer img {
@@ -229,71 +233,58 @@ margin-bottom: 14px;
 
 .trainer-bio p {
   font-size: 17px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
+/* TRAINER STYLES END */
 
-/*CONTACT US SECTION STYLES*/
+/* REACH OUT STYLES START */
 .contact {
-  background-color: #024e76;
   text-align: center;
-  color: teal;
+  background: #024e76;
 }
 
-.contact h2, h3 {
+.contact h2 {
   color: #fce138;
-}
-
-.contact-info {
-  width: 100%;
-  margin: 0 auto 0 auto;
-  overflow: auto;
 }
 
 .contact-info iframe {
   width: 400px;
-  height: 400px;
-  float: left;
-  
+height: 400px;
 }
 
-.contact-form {
-  float: left;
+.contact-info div {
+  width: 410px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 30px 0 0 60px;
+  color: white;
 }
 
-.contact-details {
-float: left;
- text-align: left;
- color: white;
- line-height: 1.5;
+.contact-info h3 {
+  color: #fce138;
+  font-size: 32px;
 }
 
-.contact-details a, a:visited {
+.contact-info p, .contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.contact-info a {
   color: #fce138;
 }
-.contact-details a:hover {
-  font-weight: bold;
+
+
+/* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
 }
 
-/*FOOTER STYLES*/
-
-  footer {
-    background: #fce138;
-    padding: 40px 35px;
-  }
-
-  footer h2 {
-    display: inline;
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-  }
-
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-  }
-
-  footer a {
-    color: #024e76;
-  }
+.text-right {
+  text-align: right;
+}
